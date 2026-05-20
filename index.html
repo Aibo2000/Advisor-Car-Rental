@@ -33,12 +33,10 @@ body {
   overflow-x: hidden;
 }
 
-/* ── SCROLLBAR ── */
 ::-webkit-scrollbar { width: 4px; }
 ::-webkit-scrollbar-track { background: var(--black); }
 ::-webkit-scrollbar-thumb { background: var(--green); }
 
-/* ── NAV ── */
 nav {
   position: sticky;
   top: 0;
@@ -73,21 +71,10 @@ nav {
   overflow: hidden;
 }
 
-.logo-mark img {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-  display: none;
-}
-
+.logo-mark img { width: 100%; height: 100%; object-fit: cover; display: none; }
 .logo-mark-svg { display: block; }
 
-.logo-text {
-  display: flex;
-  flex-direction: column;
-  line-height: 1;
-}
-
+.logo-text { display: flex; flex-direction: column; line-height: 1; }
 .logo-text-main {
   font-family: 'Barlow Condensed', sans-serif;
   font-weight: 800;
@@ -96,20 +83,9 @@ nav {
   color: var(--green);
   text-transform: uppercase;
 }
+.logo-text-sub { font-size: 0.65rem; color: var(--muted); letter-spacing: 1px; text-transform: uppercase; }
 
-.logo-text-sub {
-  font-size: 0.65rem;
-  color: var(--muted);
-  letter-spacing: 1px;
-  text-transform: uppercase;
-}
-
-.nav-links {
-  display: flex;
-  gap: 2rem;
-  list-style: none;
-}
-
+.nav-links { display: flex; gap: 2rem; list-style: none; }
 .nav-links a {
   color: var(--muted);
   text-decoration: none;
@@ -119,14 +95,9 @@ nav {
   text-transform: uppercase;
   transition: color 0.2s;
 }
-
 .nav-links a:hover { color: var(--green); }
 
-.nav-right {
-  display: flex;
-  gap: 10px;
-  align-items: center;
-}
+.nav-right { display: flex; gap: 10px; align-items: center; }
 
 .nav-btn {
   background: transparent;
@@ -157,7 +128,6 @@ nav {
 }
 .nav-btn-primary:hover { background: var(--green-light); }
 
-/* ── HERO ── */
 .hero {
   min-height: 88vh;
   background: var(--dark);
@@ -185,11 +155,7 @@ nav {
   background-size: 60px 60px;
 }
 
-.hero-content {
-  position: relative;
-  z-index: 2;
-  max-width: 700px;
-}
+.hero-content { position: relative; z-index: 2; max-width: 700px; }
 
 .hero-badge {
   display: inline-flex;
@@ -213,7 +179,6 @@ nav {
   text-transform: uppercase;
   margin-bottom: 1.5rem;
 }
-
 .hero-title span { color: var(--green); }
 
 .hero-tagline {
@@ -223,14 +188,9 @@ nav {
   line-height: 1.6;
   max-width: 500px;
 }
-
 .hero-tagline strong { color: var(--white); }
 
-.hero-ctas {
-  display: flex;
-  gap: 12px;
-  flex-wrap: wrap;
-}
+.hero-ctas { display: flex; gap: 12px; flex-wrap: wrap; }
 
 .btn-primary {
   background: var(--green);
@@ -284,33 +244,11 @@ nav {
   color: var(--green);
   line-height: 1;
 }
-.stat-label {
-  font-size: 0.65rem;
-  letter-spacing: 2px;
-  text-transform: uppercase;
-  color: var(--muted);
-  margin-top: 4px;
-}
+.stat-label { font-size: 0.65rem; letter-spacing: 2px; text-transform: uppercase; color: var(--muted); margin-top: 4px; }
 
-/* ── SECTION COMMON ── */
-.section {
-  padding: 5rem 2rem;
-  max-width: 1200px;
-  margin: 0 auto;
-}
-
-.section-header {
-  margin-bottom: 3rem;
-}
-
-.section-label {
-  font-size: 0.7rem;
-  letter-spacing: 4px;
-  text-transform: uppercase;
-  color: var(--green);
-  margin-bottom: 8px;
-}
-
+.section { padding: 5rem 2rem; max-width: 1200px; margin: 0 auto; }
+.section-header { margin-bottom: 3rem; }
+.section-label { font-size: 0.7rem; letter-spacing: 4px; text-transform: uppercase; color: var(--green); margin-bottom: 8px; }
 .section-title {
   font-family: 'Barlow Condensed', sans-serif;
   font-weight: 800;
@@ -318,22 +256,10 @@ nav {
   text-transform: uppercase;
   line-height: 1;
 }
-
 .section-title span { color: var(--green); }
+.section-divider { width: 100%; height: 1px; background: var(--border); margin: 0; }
 
-.section-divider {
-  width: 100%;
-  height: 1px;
-  background: var(--border);
-  margin: 0;
-}
-
-/* ── FLEET ── */
-.fleet-grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
-  gap: 1.5rem;
-}
+.fleet-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(300px, 1fr)); gap: 1.5rem; }
 
 .car-card {
   background: var(--gray);
@@ -342,11 +268,7 @@ nav {
   transition: all 0.3s;
   cursor: pointer;
 }
-
-.car-card:hover {
-  border-color: var(--green);
-  transform: translateY(-4px);
-}
+.car-card:hover { border-color: var(--green); transform: translateY(-4px); }
 
 .car-img-wrap {
   aspect-ratio: 16/9;
@@ -354,13 +276,7 @@ nav {
   overflow: hidden;
   position: relative;
 }
-
-.car-img-wrap img {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-  transition: transform 0.4s;
-}
+.car-img-wrap img { width: 100%; height: 100%; object-fit: cover; transition: transform 0.4s; }
 .car-card:hover .car-img-wrap img { transform: scale(1.04); }
 
 .car-placeholder {
@@ -384,20 +300,11 @@ nav {
   text-transform: uppercase;
   font-weight: 700;
 }
-
 .badge-available { background: var(--green); color: var(--black); }
 .badge-rented { background: #333; color: var(--muted); }
 
 .car-info { padding: 1.2rem; }
-
-.car-category {
-  font-size: 0.65rem;
-  letter-spacing: 3px;
-  text-transform: uppercase;
-  color: var(--green);
-  margin-bottom: 4px;
-}
-
+.car-category { font-size: 0.65rem; letter-spacing: 3px; text-transform: uppercase; color: var(--green); margin-bottom: 4px; }
 .car-name {
   font-family: 'Barlow Condensed', sans-serif;
   font-weight: 700;
@@ -406,23 +313,9 @@ nav {
   text-transform: uppercase;
   margin-bottom: 4px;
 }
-
 .car-year { font-size: 0.8rem; color: var(--muted); margin-bottom: 12px; }
-
-.car-specs {
-  display: flex;
-  gap: 12px;
-  flex-wrap: wrap;
-  margin-bottom: 14px;
-}
-
-.car-spec {
-  font-size: 0.72rem;
-  color: #666;
-  display: flex;
-  align-items: center;
-  gap: 4px;
-}
+.car-specs { display: flex; gap: 12px; flex-wrap: wrap; margin-bottom: 14px; }
+.car-spec { font-size: 0.72rem; color: #666; display: flex; align-items: center; gap: 4px; }
 
 .car-price-row {
   display: flex;
@@ -430,7 +323,6 @@ nav {
   justify-content: space-between;
   margin-bottom: 12px;
 }
-
 .car-price {
   font-family: 'Barlow Condensed', sans-serif;
   font-weight: 800;
@@ -438,12 +330,7 @@ nav {
   color: var(--green);
   line-height: 1;
 }
-
-.car-price-label {
-  font-size: 0.7rem;
-  color: var(--muted);
-  margin-bottom: 4px;
-}
+.car-price-label { font-size: 0.7rem; color: var(--muted); margin-bottom: 4px; }
 
 .car-wa-btn {
   display: block;
@@ -467,7 +354,6 @@ nav {
   background: #2a2a2a; color: #555; cursor: not-allowed; pointer-events: none;
 }
 
-/* ── CALCULATOR ── */
 .calc-section {
   background: var(--gray);
   border: 1px solid var(--border);
@@ -475,7 +361,6 @@ nav {
   padding: 2.5rem;
   max-width: 700px;
 }
-
 .calc-title {
   font-family: 'Barlow Condensed', sans-serif;
   font-weight: 800;
@@ -485,23 +370,9 @@ nav {
   color: var(--green);
   margin-bottom: 1.5rem;
 }
-
-.calc-grid {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: 1rem;
-  margin-bottom: 1.2rem;
-}
-
+.calc-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 1rem; margin-bottom: 1.2rem; }
 .calc-field { display: flex; flex-direction: column; gap: 6px; }
-
-.calc-label {
-  font-size: 0.7rem;
-  letter-spacing: 2px;
-  text-transform: uppercase;
-  color: var(--muted);
-}
-
+.calc-label { font-size: 0.7rem; letter-spacing: 2px; text-transform: uppercase; color: var(--muted); }
 .calc-input {
   background: var(--black);
   border: 1px solid var(--border);
@@ -514,7 +385,6 @@ nav {
   cursor: pointer;
 }
 .calc-input:focus { border-color: var(--green); }
-
 .calc-select { cursor: pointer; }
 
 .calc-toggle {
@@ -527,7 +397,6 @@ nav {
   margin-bottom: 1.2rem;
   cursor: pointer;
 }
-
 .toggle-box {
   width: 44px;
   height: 24px;
@@ -550,7 +419,6 @@ nav {
   transition: left 0.2s;
 }
 .toggle-box.on::after { left: 23px; }
-
 .toggle-info { flex: 1; }
 .toggle-name {
   font-family: 'Barlow Condensed', sans-serif;
@@ -560,12 +428,7 @@ nav {
   text-transform: uppercase;
 }
 .toggle-desc { font-size: 0.75rem; color: var(--muted); margin-top: 2px; }
-.toggle-price {
-  font-family: 'Barlow Condensed', sans-serif;
-  font-weight: 700;
-  font-size: 1.1rem;
-  color: var(--green);
-}
+.toggle-price { font-family: 'Barlow Condensed', sans-serif; font-weight: 700; font-size: 1.1rem; color: var(--green); }
 
 .calc-result {
   background: var(--black);
@@ -573,16 +436,8 @@ nav {
   padding: 1.2rem;
   margin-bottom: 1.2rem;
 }
-
 .calc-result-rows { display: flex; flex-direction: column; gap: 8px; margin-bottom: 12px; }
-
-.calc-result-row {
-  display: flex;
-  justify-content: space-between;
-  font-size: 0.85rem;
-  color: var(--muted);
-}
-
+.calc-result-row { display: flex; justify-content: space-between; font-size: 0.85rem; color: var(--muted); }
 .calc-result-row.total {
   padding-top: 10px;
   border-top: 1px solid var(--border);
@@ -590,7 +445,6 @@ nav {
   font-weight: 600;
   font-size: 1rem;
 }
-
 .calc-result-row .amount { color: var(--white); }
 .calc-result-row.total .amount {
   font-family: 'Barlow Condensed', sans-serif;
@@ -618,13 +472,7 @@ nav {
 }
 .calc-wa-btn:hover { background: #1ebe5d; }
 
-/* ── PROMOS ── */
-.promos-grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
-  gap: 1.5rem;
-}
-
+.promos-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(280px, 1fr)); gap: 1.5rem; }
 .promo-card {
   background: var(--gray);
   border: 1px solid var(--border);
@@ -642,7 +490,6 @@ nav {
   height: 100%;
   background: var(--green);
 }
-
 .promo-badge {
   display: inline-block;
   background: rgba(0,194,68,0.15);
@@ -653,7 +500,6 @@ nav {
   padding: 4px 10px;
   margin-bottom: 10px;
 }
-
 .promo-name {
   font-family: 'Barlow Condensed', sans-serif;
   font-weight: 800;
@@ -661,18 +507,10 @@ nav {
   text-transform: uppercase;
   margin-bottom: 8px;
 }
-
 .promo-desc { font-size: 0.85rem; color: var(--muted); line-height: 1.5; }
 
-/* ── FAQ ── */
 .faq-list { display: flex; flex-direction: column; gap: 2px; }
-
-.faq-item {
-  background: var(--gray);
-  border: 1px solid var(--border);
-  overflow: hidden;
-}
-
+.faq-item { background: var(--gray); border: 1px solid var(--border); overflow: hidden; }
 .faq-question {
   padding: 1.2rem 1.5rem;
   display: flex;
@@ -686,33 +524,13 @@ nav {
   transition: color 0.2s;
 }
 .faq-question:hover { color: var(--green); }
-
-.faq-icon {
-  font-size: 1.2rem;
-  color: var(--green);
-  transition: transform 0.3s;
-  flex-shrink: 0;
-}
+.faq-icon { font-size: 1.2rem; color: var(--green); transition: transform 0.3s; flex-shrink: 0; }
 .faq-item.open .faq-icon { transform: rotate(45deg); }
-
-.faq-answer {
-  max-height: 0;
-  overflow: hidden;
-  transition: max-height 0.3s ease;
-  font-size: 0.9rem;
-  color: var(--muted);
-  line-height: 1.6;
-}
+.faq-answer { max-height: 0; overflow: hidden; transition: max-height 0.3s ease; font-size: 0.9rem; color: var(--muted); line-height: 1.6; }
 .faq-item.open .faq-answer { max-height: 200px; }
 .faq-answer-inner { padding: 0 1.5rem 1.2rem; }
 
-/* ── REVIEWS ── */
-.reviews-grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
-  gap: 1.5rem;
-}
-
+.reviews-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(280px, 1fr)); gap: 1.5rem; }
 .review-card {
   background: var(--gray);
   border: 1px solid var(--border);
@@ -720,22 +538,8 @@ nav {
   transition: border-color 0.2s;
 }
 .review-card:hover { border-color: rgba(0,194,68,0.3); }
-
-.review-stars {
-  color: var(--green);
-  font-size: 0.9rem;
-  margin-bottom: 10px;
-  letter-spacing: 2px;
-}
-
-.review-text {
-  font-size: 0.88rem;
-  color: var(--muted);
-  line-height: 1.6;
-  margin-bottom: 14px;
-  font-style: italic;
-}
-
+.review-stars { color: var(--green); font-size: 0.9rem; margin-bottom: 10px; letter-spacing: 2px; }
+.review-text { font-size: 0.88rem; color: var(--muted); line-height: 1.6; margin-bottom: 14px; font-style: italic; }
 .review-author {
   font-family: 'Barlow Condensed', sans-serif;
   font-size: 0.9rem;
@@ -744,17 +548,14 @@ nav {
   text-transform: uppercase;
   color: var(--white);
 }
-
 .review-date { font-size: 0.72rem; color: #555; margin-top: 2px; }
 
-/* ── FOOTER ── */
 footer {
   background: var(--gray);
   border-top: 2px solid var(--green);
   padding: 2.5rem 2rem;
   text-align: center;
 }
-
 .footer-logo {
   font-family: 'Barlow Condensed', sans-serif;
   font-weight: 800;
@@ -764,17 +565,8 @@ footer {
   text-transform: uppercase;
   margin-bottom: 6px;
 }
-
 .footer-tagline { font-size: 0.8rem; color: var(--muted); margin-bottom: 1.2rem; }
-
-.footer-links {
-  display: flex;
-  justify-content: center;
-  gap: 1.5rem;
-  flex-wrap: wrap;
-  margin-bottom: 1rem;
-}
-
+.footer-links { display: flex; justify-content: center; gap: 1.5rem; flex-wrap: wrap; margin-bottom: 1rem; }
 .footer-links a {
   font-size: 0.75rem;
   color: #555;
@@ -784,10 +576,8 @@ footer {
   transition: color 0.2s;
 }
 .footer-links a:hover { color: var(--green); }
-
 .footer-copy { font-size: 0.72rem; color: #444; }
 
-/* ── ADMIN MODAL ── */
 .modal-overlay {
   display: none;
   position: fixed;
@@ -809,7 +599,6 @@ footer {
   padding: 2rem;
   margin: auto;
 }
-
 .modal-header {
   display: flex;
   justify-content: space-between;
@@ -818,7 +607,6 @@ footer {
   padding-bottom: 1rem;
   border-bottom: 1px solid var(--border);
 }
-
 .modal-title {
   font-family: 'Barlow Condensed', sans-serif;
   font-size: 1.6rem;
@@ -827,18 +615,9 @@ footer {
   text-transform: uppercase;
   color: var(--green);
 }
-
-.modal-close {
-  background: none;
-  border: none;
-  color: #666;
-  font-size: 1.5rem;
-  cursor: pointer;
-  transition: color 0.2s;
-}
+.modal-close { background: none; border: none; color: #666; font-size: 1.5rem; cursor: pointer; transition: color 0.2s; }
 .modal-close:hover { color: var(--white); }
 
-/* Admin tabs */
 .admin-tabs {
   display: flex;
   gap: 4px;
@@ -846,7 +625,6 @@ footer {
   border-bottom: 1px solid var(--border);
   flex-wrap: wrap;
 }
-
 .admin-tab {
   background: none;
   border: none;
@@ -867,16 +645,8 @@ footer {
 .admin-tab-content { display: none; }
 .admin-tab-content.active { display: block; }
 
-/* Forms */
 .form-group { display: flex; flex-direction: column; gap: 6px; margin-bottom: 12px; }
-
-.form-label {
-  font-size: 0.7rem;
-  letter-spacing: 2px;
-  text-transform: uppercase;
-  color: var(--muted);
-}
-
+.form-label { font-size: 0.7rem; letter-spacing: 2px; text-transform: uppercase; color: var(--muted); }
 .form-input {
   background: var(--black);
   border: 1px solid var(--border);
@@ -889,9 +659,7 @@ footer {
   width: 100%;
 }
 .form-input:focus { border-color: var(--green); }
-
 select.form-input { cursor: pointer; }
-
 .form-row { display: grid; grid-template-columns: 1fr 1fr; gap: 12px; }
 .form-row-3 { display: grid; grid-template-columns: 1fr 1fr 1fr; gap: 12px; }
 
@@ -911,21 +679,10 @@ select.form-input { cursor: pointer; }
   margin-top: 4px;
 }
 .form-btn:hover { background: var(--green-light); }
-
-.form-btn-secondary {
-  background: var(--gray2);
-  color: var(--muted);
-  border: 1px solid var(--border);
-}
+.form-btn-secondary { background: var(--gray2); color: var(--muted); border: 1px solid var(--border); }
 .form-btn-secondary:hover { background: #333; color: var(--white); }
 
-.upload-row {
-  display: flex;
-  gap: 8px;
-  align-items: center;
-  margin-top: 6px;
-}
-
+.upload-row { display: flex; gap: 8px; align-items: center; margin-top: 6px; }
 .upload-label {
   background: var(--gray2);
   border: 1px solid var(--border);
@@ -938,19 +695,9 @@ select.form-input { cursor: pointer; }
   transition: border-color 0.2s;
 }
 .upload-label:hover { border-color: var(--green); }
+.upload-preview { width: 48px; height: 48px; object-fit: cover; border: 1px solid var(--border); display: none; background: var(--black); }
 
-.upload-preview {
-  width: 48px;
-  height: 48px;
-  object-fit: cover;
-  border: 1px solid var(--border);
-  display: none;
-  background: var(--black);
-}
-
-/* Item list admin */
 .admin-item-list { display: flex; flex-direction: column; gap: 8px; margin-bottom: 1.5rem; }
-
 .admin-item-row {
   background: var(--black);
   border: 1px solid var(--border);
@@ -959,20 +706,10 @@ select.form-input { cursor: pointer; }
   align-items: center;
   gap: 12px;
 }
-
-.admin-item-img {
-  width: 64px;
-  height: 40px;
-  object-fit: cover;
-  background: var(--gray2);
-  border: 1px solid var(--border);
-  flex-shrink: 0;
-}
-
+.admin-item-img { width: 64px; height: 40px; object-fit: cover; background: var(--gray2); border: 1px solid var(--border); flex-shrink: 0; }
 .admin-item-info { flex: 1; min-width: 0; }
 .admin-item-name { font-family: 'Barlow Condensed', sans-serif; font-size: 1rem; font-weight: 700; }
 .admin-item-meta { font-size: 0.72rem; color: var(--muted); margin-top: 2px; }
-
 .admin-item-actions { display: flex; gap: 6px; flex-shrink: 0; }
 
 .btn-edit {
@@ -986,7 +723,6 @@ select.form-input { cursor: pointer; }
   font-family: 'Barlow', sans-serif;
 }
 .btn-edit:hover { background: var(--green); color: var(--black); border-color: var(--green); }
-
 .btn-del {
   background: #1a0000;
   border: 1px solid #440000;
@@ -999,14 +735,7 @@ select.form-input { cursor: pointer; }
 }
 .btn-del:hover { background: #440000; }
 
-.btn-toggle-status {
-  padding: 5px 10px;
-  font-size: 0.68rem;
-  cursor: pointer;
-  border: 1px solid;
-  font-family: 'Barlow', sans-serif;
-  transition: all 0.2s;
-}
+.btn-toggle-status { padding: 5px 10px; font-size: 0.68rem; cursor: pointer; border: 1px solid; font-family: 'Barlow', sans-serif; transition: all 0.2s; }
 .btn-toggle-status.available { background: rgba(0,194,68,0.1); border-color: var(--green); color: var(--green); }
 .btn-toggle-status.rented { background: #1a1a1a; border-color: #444; color: #666; }
 
@@ -1022,10 +751,29 @@ select.form-input { cursor: pointer; }
   margin-bottom: 14px;
 }
 
-/* Login */
-.login-box { max-width: 360px; }
+.login-box { max-width: 420px; }
 
-/* Toast */
+/* Firebase loading indicator */
+.fb-loading {
+  text-align: center;
+  padding: 2rem;
+  color: var(--muted);
+  font-size: 0.85rem;
+  letter-spacing: 2px;
+}
+.fb-loading::before {
+  content: '';
+  display: block;
+  width: 32px;
+  height: 32px;
+  border: 2px solid var(--border);
+  border-top-color: var(--green);
+  border-radius: 50%;
+  animation: spin 0.8s linear infinite;
+  margin: 0 auto 12px;
+}
+@keyframes spin { to { transform: rotate(360deg); } }
+
 .toast {
   position: fixed;
   bottom: 2rem;
@@ -1044,8 +792,8 @@ select.form-input { cursor: pointer; }
   transition: all 0.3s;
 }
 .toast.show { transform: translateY(0); opacity: 1; }
+.toast.error { background: var(--red); color: white; }
 
-/* Edit sub-modal */
 .edit-overlay {
   display: none;
   position: fixed;
@@ -1094,7 +842,7 @@ select.form-input { cursor: pointer; }
   </ul>
 
   <div class="nav-right">
-    <button class="nav-btn" onclick="openAdmin()">⚙ Admin</button>
+    <button class="nav-btn" onclick="window.openAdmin()">⚙ Admin</button>
     <a class="nav-btn-primary" id="navWaBtn" href="#" target="_blank">💬 Contactar</a>
   </div>
 </nav>
@@ -1104,12 +852,8 @@ select.form-input { cursor: pointer; }
   <div class="hero-bg"></div>
   <div class="hero-grid-lines"></div>
   <div class="hero-content">
-    <div class="hero-badge">
-      <span>●</span> Disponible ahora en Reynosa
-    </div>
-    <h1 class="hero-title">
-      Tu Próximo<br><span>Viaje</span><br>Empieza Aquí
-    </h1>
+    <div class="hero-badge"><span>●</span> Disponible ahora en Reynosa</div>
+    <h1 class="hero-title">Tu Próximo<br><span>Viaje</span><br>Empieza Aquí</h1>
     <p class="hero-tagline">
       <strong>Un Auto. Una Experiencia.</strong><br>
       Un asesor listo para ti — renta por días con atención personalizada.
@@ -1144,7 +888,7 @@ select.form-input { cursor: pointer; }
       <div class="section-label">Nuestra Flota</div>
       <h2 class="section-title">Elige Tu <span>Auto</span></h2>
     </div>
-    <div class="fleet-grid" id="fleetGrid"></div>
+    <div class="fleet-grid" id="fleetGrid"><div class="fb-loading">CARGANDO FLOTA</div></div>
   </div>
 </section>
 
@@ -1162,25 +906,24 @@ select.form-input { cursor: pointer; }
       <div class="calc-grid">
         <div class="calc-field">
           <label class="calc-label">Auto</label>
-          <select class="calc-input calc-select" id="calcCar" onchange="calculate()">
+          <select class="calc-input calc-select" id="calcCar" onchange="window.calculate()">
             <option value="">— Selecciona un auto —</option>
           </select>
         </div>
         <div class="calc-field">
           <label class="calc-label">Días de Renta</label>
-          <input type="number" class="calc-input" id="calcDays" min="1" value="1" onchange="calculate()" oninput="calculate()">
+          <input type="number" class="calc-input" id="calcDays" min="1" value="1" onchange="window.calculate()" oninput="window.calculate()">
         </div>
         <div class="calc-field">
           <label class="calc-label">Fecha de Inicio</label>
-          <input type="date" class="calc-input" id="calcStart" onchange="calculate()">
+          <input type="date" class="calc-input" id="calcStart" onchange="window.calculate()">
         </div>
         <div class="calc-field">
           <label class="calc-label">Fecha de Devolución</label>
           <input type="date" class="calc-input" id="calcEnd" readonly style="background:#111;cursor:default;">
         </div>
       </div>
-
-      <div class="calc-toggle" onclick="toggleFullCover()">
+      <div class="calc-toggle" onclick="window.toggleFullCover()">
         <div class="toggle-box" id="fcToggle"></div>
         <div class="toggle-info">
           <div class="toggle-name">Full Cover</div>
@@ -1188,13 +931,11 @@ select.form-input { cursor: pointer; }
         </div>
         <div class="toggle-price" id="fcPriceTag"></div>
       </div>
-
       <div class="calc-result">
         <div class="calc-result-rows" id="calcRows">
           <div class="calc-result-row"><span>Selecciona un auto para calcular</span><span></span></div>
         </div>
       </div>
-
       <a class="calc-wa-btn" id="calcWaBtn" href="#" target="_blank">💬 RESERVAR POR WHATSAPP</a>
     </div>
   </div>
@@ -1209,7 +950,7 @@ select.form-input { cursor: pointer; }
       <div class="section-label">Ofertas Especiales</div>
       <h2 class="section-title">Nuestras <span>Promos</span></h2>
     </div>
-    <div class="promos-grid" id="promosGrid"></div>
+    <div class="promos-grid" id="promosGrid"><div class="fb-loading">CARGANDO PROMOS</div></div>
   </div>
 </section>
 
@@ -1222,7 +963,7 @@ select.form-input { cursor: pointer; }
       <div class="section-label">Respuestas Rápidas</div>
       <h2 class="section-title">Preguntas <span>Frecuentes</span></h2>
     </div>
-    <div class="faq-list" id="faqList"></div>
+    <div class="faq-list" id="faqList"><div class="fb-loading">CARGANDO FAQ</div></div>
   </div>
 </section>
 
@@ -1235,7 +976,7 @@ select.form-input { cursor: pointer; }
       <div class="section-label">Lo que dicen nuestros clientes</div>
       <h2 class="section-title">Reseñas <span>Reales</span></h2>
     </div>
-    <div class="reviews-grid" id="reviewsGrid"></div>
+    <div class="reviews-grid" id="reviewsGrid"><div class="fb-loading">CARGANDO RESEÑAS</div></div>
   </div>
 </section>
 
@@ -1258,27 +999,27 @@ select.form-input { cursor: pointer; }
   <div class="modal">
     <div class="modal-header">
       <span class="modal-title">⚙ Panel Admin</span>
-      <button class="modal-close" onclick="closeAdmin()">✕</button>
+      <button class="modal-close" onclick="window.closeAdmin()">✕</button>
     </div>
 
     <!-- LOGIN -->
     <div id="loginBox" class="login-box">
       <div class="form-group">
         <label class="form-label">Contraseña</label>
-        <input type="password" class="form-input" id="adminPwd" placeholder="••••••••" onkeydown="if(event.key==='Enter')checkLogin()">
+        <input type="password" class="form-input" id="adminPwd" placeholder="••••••••" onkeydown="if(event.key==='Enter')window.checkLogin()">
       </div>
       <p id="loginErr" style="color:var(--red);font-size:0.8rem;display:none;margin-bottom:8px;">Contraseña incorrecta</p>
-      <button class="form-btn" onclick="checkLogin()">ENTRAR</button>
+      <button class="form-btn" id="loginBtn" onclick="window.checkLogin()">ENTRAR</button>
     </div>
 
     <!-- PANEL -->
     <div id="adminPanel" style="display:none;">
       <div class="admin-tabs">
-        <button class="admin-tab active" onclick="switchTab('cars')">🚗 Autos</button>
-        <button class="admin-tab" onclick="switchTab('promos')">🏷 Promos</button>
-        <button class="admin-tab" onclick="switchTab('faq')">❓ FAQ</button>
-        <button class="admin-tab" onclick="switchTab('reviews')">⭐ Reseñas</button>
-        <button class="admin-tab" onclick="switchTab('settings')">⚙ Config</button>
+        <button class="admin-tab active" onclick="window.switchTab('cars')">🚗 Autos</button>
+        <button class="admin-tab" onclick="window.switchTab('promos')">🏷 Promos</button>
+        <button class="admin-tab" onclick="window.switchTab('faq')">❓ FAQ</button>
+        <button class="admin-tab" onclick="window.switchTab('reviews')">⭐ Reseñas</button>
+        <button class="admin-tab" onclick="window.switchTab('settings')">⚙ Config</button>
       </div>
 
       <!-- CARS TAB -->
@@ -1287,59 +1028,31 @@ select.form-input { cursor: pointer; }
         <div class="admin-item-list" id="adminCarList"></div>
         <div class="admin-section-title">Agregar Auto</div>
         <div class="form-row">
-          <div class="form-group">
-            <label class="form-label">Modelo / Nombre</label>
-            <input type="text" class="form-input" id="nc-name" placeholder="Nissan Versa">
-          </div>
-          <div class="form-group">
-            <label class="form-label">Año</label>
-            <input type="number" class="form-input" id="nc-year" placeholder="2023">
-          </div>
+          <div class="form-group"><label class="form-label">Modelo / Nombre</label><input type="text" class="form-input" id="nc-name" placeholder="Nissan Versa"></div>
+          <div class="form-group"><label class="form-label">Año</label><input type="number" class="form-input" id="nc-year" placeholder="2023"></div>
         </div>
         <div class="form-row-3">
-          <div class="form-group">
-            <label class="form-label">Categoría</label>
-            <select class="form-input" id="nc-cat">
-              <option>Económico</option>
-              <option>Sedán</option>
-              <option>SUV</option>
-              <option>Pickup</option>
-              <option>Lujo</option>
-            </select>
+          <div class="form-group"><label class="form-label">Categoría</label>
+            <select class="form-input" id="nc-cat"><option>Económico</option><option>Sedán</option><option>SUV</option><option>Pickup</option><option>Lujo</option></select>
           </div>
-          <div class="form-group">
-            <label class="form-label">Precio/Día (MXN)</label>
-            <input type="number" class="form-input" id="nc-price" placeholder="500">
-          </div>
-          <div class="form-group">
-            <label class="form-label">Transmisión</label>
-            <select class="form-input" id="nc-trans">
-              <option>Automático</option>
-              <option>Manual</option>
-            </select>
+          <div class="form-group"><label class="form-label">Precio/Día (MXN)</label><input type="number" class="form-input" id="nc-price" placeholder="500"></div>
+          <div class="form-group"><label class="form-label">Transmisión</label>
+            <select class="form-input" id="nc-trans"><option>Automático</option><option>Manual</option></select>
           </div>
         </div>
         <div class="form-row">
-          <div class="form-group">
-            <label class="form-label">Pasajeros</label>
-            <input type="number" class="form-input" id="nc-pass" placeholder="5" min="1" max="12">
-          </div>
-          <div class="form-group">
-            <label class="form-label">Notas extra</label>
-            <input type="text" class="form-input" id="nc-notes" placeholder="A/C, km ilimitados...">
-          </div>
+          <div class="form-group"><label class="form-label">Pasajeros</label><input type="number" class="form-input" id="nc-pass" placeholder="5" min="1" max="12"></div>
+          <div class="form-group"><label class="form-label">Notas extra</label><input type="text" class="form-input" id="nc-notes" placeholder="A/C, km ilimitados..."></div>
         </div>
         <div class="form-group">
           <label class="form-label">Foto del Auto</label>
-          <input type="text" class="form-input" id="nc-img" placeholder="https://... o usa el botón">
+          <input type="text" class="form-input" id="nc-img" placeholder="https://...">
           <div class="upload-row">
-            <label class="upload-label">📁 SUBIR ARCHIVO
-              <input type="file" accept="image/*" style="display:none;" onchange="fileToUrl(this,'nc-img','nc-preview')">
-            </label>
+            <label class="upload-label">📁 SUBIR ARCHIVO<input type="file" accept="image/*" style="display:none;" onchange="window.fileToUrl(this,'nc-img','nc-preview')"></label>
             <img id="nc-preview" class="upload-preview">
           </div>
         </div>
-        <button class="form-btn" onclick="addCar()">+ AGREGAR AUTO</button>
+        <button class="form-btn" onclick="window.addCar()">+ AGREGAR AUTO</button>
       </div>
 
       <!-- PROMOS TAB -->
@@ -1348,20 +1061,11 @@ select.form-input { cursor: pointer; }
         <div class="admin-item-list" id="adminPromoList"></div>
         <div class="admin-section-title">Agregar Promo</div>
         <div class="form-row">
-          <div class="form-group">
-            <label class="form-label">Nombre de la Promo</label>
-            <input type="text" class="form-input" id="np-name" placeholder="Fin de Semana">
-          </div>
-          <div class="form-group">
-            <label class="form-label">Badge (etiqueta)</label>
-            <input type="text" class="form-input" id="np-badge" placeholder="FINDE · OFERTA">
-          </div>
+          <div class="form-group"><label class="form-label">Nombre de la Promo</label><input type="text" class="form-input" id="np-name" placeholder="Fin de Semana"></div>
+          <div class="form-group"><label class="form-label">Badge (etiqueta)</label><input type="text" class="form-input" id="np-badge" placeholder="FINDE · OFERTA"></div>
         </div>
-        <div class="form-group">
-          <label class="form-label">Descripción</label>
-          <textarea class="form-input" id="np-desc" rows="3" placeholder="Renta de viernes a domingo con descuento especial..."></textarea>
-        </div>
-        <button class="form-btn" onclick="addPromo()">+ AGREGAR PROMO</button>
+        <div class="form-group"><label class="form-label">Descripción</label><textarea class="form-input" id="np-desc" rows="3" placeholder="Renta de viernes a domingo con descuento especial..."></textarea></div>
+        <button class="form-btn" onclick="window.addPromo()">+ AGREGAR PROMO</button>
       </div>
 
       <!-- FAQ TAB -->
@@ -1369,15 +1073,9 @@ select.form-input { cursor: pointer; }
         <div class="admin-section-title">Preguntas Frecuentes</div>
         <div class="admin-item-list" id="adminFaqList"></div>
         <div class="admin-section-title">Agregar Pregunta</div>
-        <div class="form-group">
-          <label class="form-label">Pregunta</label>
-          <input type="text" class="form-input" id="nf-q" placeholder="¿Qué documentos necesito?">
-        </div>
-        <div class="form-group">
-          <label class="form-label">Respuesta</label>
-          <textarea class="form-input" id="nf-a" rows="3" placeholder="Necesitas INE vigente, licencia de manejo y..."></textarea>
-        </div>
-        <button class="form-btn" onclick="addFaq()">+ AGREGAR PREGUNTA</button>
+        <div class="form-group"><label class="form-label">Pregunta</label><input type="text" class="form-input" id="nf-q" placeholder="¿Qué documentos necesito?"></div>
+        <div class="form-group"><label class="form-label">Respuesta</label><textarea class="form-input" id="nf-a" rows="3" placeholder="Necesitas INE vigente, licencia de manejo y..."></textarea></div>
+        <button class="form-btn" onclick="window.addFaq()">+ AGREGAR PREGUNTA</button>
       </div>
 
       <!-- REVIEWS TAB -->
@@ -1386,28 +1084,14 @@ select.form-input { cursor: pointer; }
         <div class="admin-item-list" id="adminReviewList"></div>
         <div class="admin-section-title">Agregar Reseña</div>
         <div class="form-row">
-          <div class="form-group">
-            <label class="form-label">Nombre del Cliente</label>
-            <input type="text" class="form-input" id="nr-name" placeholder="María García">
-          </div>
-          <div class="form-group">
-            <label class="form-label">Calificación</label>
-            <select class="form-input" id="nr-stars">
-              <option value="5">★★★★★</option>
-              <option value="4">★★★★☆</option>
-              <option value="3">★★★☆☆</option>
-            </select>
+          <div class="form-group"><label class="form-label">Nombre del Cliente</label><input type="text" class="form-input" id="nr-name" placeholder="María García"></div>
+          <div class="form-group"><label class="form-label">Calificación</label>
+            <select class="form-input" id="nr-stars"><option value="5">★★★★★</option><option value="4">★★★★☆</option><option value="3">★★★☆☆</option></select>
           </div>
         </div>
-        <div class="form-group">
-          <label class="form-label">Comentario</label>
-          <textarea class="form-input" id="nr-text" rows="3" placeholder="Excelente servicio, muy rápido..."></textarea>
-        </div>
-        <div class="form-group">
-          <label class="form-label">Fecha</label>
-          <input type="text" class="form-input" id="nr-date" placeholder="Mayo 2025">
-        </div>
-        <button class="form-btn" onclick="addReview()">+ AGREGAR RESEÑA</button>
+        <div class="form-group"><label class="form-label">Comentario</label><textarea class="form-input" id="nr-text" rows="3" placeholder="Excelente servicio..."></textarea></div>
+        <div class="form-group"><label class="form-label">Fecha</label><input type="text" class="form-input" id="nr-date" placeholder="Mayo 2025"></div>
+        <button class="form-btn" onclick="window.addReview()">+ AGREGAR RESEÑA</button>
       </div>
 
       <!-- SETTINGS TAB -->
@@ -1417,36 +1101,28 @@ select.form-input { cursor: pointer; }
           <label class="form-label">URL o archivo del logo</label>
           <input type="text" class="form-input" id="set-logo" placeholder="https://...">
           <div class="upload-row">
-            <label class="upload-label">📁 SUBIR LOGO
-              <input type="file" accept="image/*" style="display:none;" onchange="fileToUrl(this,'set-logo','set-logo-preview')">
-            </label>
+            <label class="upload-label">📁 SUBIR LOGO<input type="file" accept="image/*" style="display:none;" onchange="window.fileToUrl(this,'set-logo','set-logo-preview')"></label>
             <img id="set-logo-preview" class="upload-preview">
           </div>
         </div>
-        <button class="form-btn" onclick="saveLogo()" style="margin-bottom:1.5rem;">GUARDAR LOGO</button>
+        <button class="form-btn" onclick="window.saveLogo()" style="margin-bottom:1.5rem;">GUARDAR LOGO</button>
 
         <div class="admin-section-title">WhatsApp</div>
         <div class="form-group">
           <label class="form-label">Número de WhatsApp (con código de país)</label>
           <input type="text" class="form-input" id="set-wa" placeholder="5218991234567">
         </div>
-        <button class="form-btn" onclick="saveWa()" style="margin-bottom:1.5rem;">GUARDAR NÚMERO</button>
+        <button class="form-btn" onclick="window.saveWa()" style="margin-bottom:1.5rem;">GUARDAR NÚMERO</button>
 
         <div class="admin-section-title">Full Cover</div>
         <div class="form-row">
-          <div class="form-group">
-            <label class="form-label">Precio Full Cover por Día (MXN)</label>
-            <input type="number" class="form-input" id="set-fc" placeholder="150">
-          </div>
-          <div class="form-group">
-            <label class="form-label">Descripción</label>
-            <input type="text" class="form-input" id="set-fc-desc" placeholder="Cobertura total ante cualquier eventualidad">
-          </div>
+          <div class="form-group"><label class="form-label">Precio Full Cover por Día (MXN)</label><input type="number" class="form-input" id="set-fc" placeholder="150"></div>
+          <div class="form-group"><label class="form-label">Descripción</label><input type="text" class="form-input" id="set-fc-desc" placeholder="Cobertura total ante cualquier eventualidad"></div>
         </div>
-        <button class="form-btn" onclick="saveFc()">GUARDAR FULL COVER</button>
+        <button class="form-btn" onclick="window.saveFc()">GUARDAR FULL COVER</button>
 
         <div style="margin-top:1.5rem;padding-top:1.5rem;border-top:1px solid var(--border);">
-          <button class="form-btn form-btn-secondary" onclick="logout()">CERRAR SESIÓN</button>
+          <button class="form-btn form-btn-secondary" onclick="window.logout()">CERRAR SESIÓN</button>
         </div>
       </div>
     </div>
@@ -1458,7 +1134,7 @@ select.form-input { cursor: pointer; }
   <div class="modal" style="max-width:580px;">
     <div class="modal-header">
       <span class="modal-title">Editar Auto</span>
-      <button class="modal-close" onclick="closeEditCar()">✕</button>
+      <button class="modal-close" onclick="window.closeEditCar()">✕</button>
     </div>
     <div class="form-row">
       <div class="form-group"><label class="form-label">Modelo</label><input type="text" class="form-input" id="ec-name"></div>
@@ -1466,9 +1142,7 @@ select.form-input { cursor: pointer; }
     </div>
     <div class="form-row-3">
       <div class="form-group"><label class="form-label">Categoría</label>
-        <select class="form-input" id="ec-cat">
-          <option>Económico</option><option>Sedán</option><option>SUV</option><option>Pickup</option><option>Lujo</option>
-        </select>
+        <select class="form-input" id="ec-cat"><option>Económico</option><option>Sedán</option><option>SUV</option><option>Pickup</option><option>Lujo</option></select>
       </div>
       <div class="form-group"><label class="form-label">Precio/Día</label><input type="number" class="form-input" id="ec-price"></div>
       <div class="form-group"><label class="form-label">Transmisión</label>
@@ -1483,90 +1157,134 @@ select.form-input { cursor: pointer; }
       <label class="form-label">Foto</label>
       <input type="text" class="form-input" id="ec-img">
       <div class="upload-row">
-        <label class="upload-label">📁 SUBIR ARCHIVO
-          <input type="file" accept="image/*" style="display:none;" onchange="fileToUrl(this,'ec-img','ec-preview')">
-        </label>
+        <label class="upload-label">📁 SUBIR ARCHIVO<input type="file" accept="image/*" style="display:none;" onchange="window.fileToUrl(this,'ec-img','ec-preview')"></label>
         <img id="ec-preview" class="upload-preview">
       </div>
     </div>
-    <button class="form-btn" onclick="saveEditCar()">GUARDAR CAMBIOS</button>
+    <button class="form-btn" onclick="window.saveEditCar()">GUARDAR CAMBIOS</button>
   </div>
 </div>
-
 
 <!-- EDIT FAQ MODAL -->
 <div class="edit-overlay" id="editFaqModal">
   <div class="modal" style="max-width:520px;">
     <div class="modal-header">
       <span class="modal-title">Editar Pregunta</span>
-      <button class="modal-close" onclick="closeEditFaq()">✕</button>
+      <button class="modal-close" onclick="window.closeEditFaq()">✕</button>
     </div>
-    <div class="form-group">
-      <label class="form-label">Pregunta</label>
-      <input type="text" class="form-input" id="ef-q">
-    </div>
-    <div class="form-group">
-      <label class="form-label">Respuesta</label>
-      <textarea class="form-input" id="ef-a" rows="5"></textarea>
-    </div>
-    <button class="form-btn" onclick="saveEditFaq()">GUARDAR CAMBIOS</button>
+    <div class="form-group"><label class="form-label">Pregunta</label><input type="text" class="form-input" id="ef-q"></div>
+    <div class="form-group"><label class="form-label">Respuesta</label><textarea class="form-input" id="ef-a" rows="5"></textarea></div>
+    <button class="form-btn" onclick="window.saveEditFaq()">GUARDAR CAMBIOS</button>
   </div>
 </div>
+
 <!-- TOAST -->
 <div class="toast" id="toast">GUARDADO</div>
 
-<script>
-const ADMIN_PASS = 'advisor2026';
+<!-- FIREBASE SDK -->
+<script type="module">
+import { initializeApp } from "https://www.gstatic.com/firebasejs/12.13.0/firebase-app.js";
+import {
+  getFirestore, collection, doc,
+  onSnapshot, setDoc, deleteDoc, getDoc
+} from "https://www.gstatic.com/firebasejs/12.13.0/firebase-firestore.js";
+import {
+  getAuth, signInWithEmailAndPassword, signOut, onAuthStateChanged
+} from "https://www.gstatic.com/firebasejs/12.13.0/firebase-auth.js";
 
-// ── DEFAULT DATA ──
+// ── FIREBASE CONFIG ──
+const firebaseConfig = {
+  apiKey: "AIzaSyBsu3Vclr6xvumf6gU5uLvDtKQVQqRxhds",
+  authDomain: "advisor-car-rental.firebaseapp.com",
+  projectId: "advisor-car-rental",
+  storageBucket: "advisor-car-rental.firebasestorage.app",
+  messagingSenderId: "679908695584",
+  appId: "1:679908695584:web:f9358c3de1dc846e612645"
+};
+
+const app = initializeApp(firebaseConfig);
+const db = getFirestore(app);
+const auth = getAuth(app);
+
+// ── DEFAULT DATA (se sube a Firestore solo la primera vez) ──
 const defaultCars = [
-  { id: 1, name: 'Nissan Versa', year: 2022, cat: 'Sedán', price: 500, trans: 'Automático', pass: 5, notes: 'A/C, km ilimitados', img: '', available: true },
-  { id: 2, name: 'Chevrolet Spark', year: 2023, cat: 'Económico', price: 380, trans: 'Manual', pass: 4, notes: 'Rendidor, ideal en ciudad', img: '', available: true },
-  { id: 3, name: 'Toyota RAV4', year: 2022, cat: 'SUV', price: 950, trans: 'Automático', pass: 5, notes: 'A/C, 4 puertas, espaciosa', img: '', available: false },
+  { id: 'car1', name: 'Nissan Versa', year: 2022, cat: 'Sedán', price: 500, trans: 'Automático', pass: 5, notes: 'A/C, km ilimitados', img: '', available: true },
+  { id: 'car2', name: 'Chevrolet Spark', year: 2023, cat: 'Económico', price: 380, trans: 'Manual', pass: 4, notes: 'Rendidor, ideal en ciudad', img: '', available: true },
+  { id: 'car3', name: 'Toyota RAV4', year: 2022, cat: 'SUV', price: 950, trans: 'Automático', pass: 5, notes: 'A/C, 4 puertas, espaciosa', img: '', available: false },
 ];
-
 const defaultPromos = [
-  { id: 1, name: 'Fin de Semana', badge: 'FINDE · ESPECIAL', desc: 'Renta de viernes a domingo con tarifa preferencial. Ideal para escapadas familiares o con amigos.' },
-  { id: 2, name: 'Semana Completa', badge: 'LUNES A VIERNES', desc: 'Renta tu auto de lunes a viernes y llega puntual a cada reunión. Precio fijo toda la semana.' },
-  { id: 3, name: 'Mensual', badge: 'MES COMPLETO', desc: '¿Necesitas un auto por un mes? Tenemos la mejor tarifa mensual de Reynosa. Consulta disponibilidad.' },
+  { id: 'promo1', name: 'Fin de Semana', badge: 'FINDE · ESPECIAL', desc: 'Renta de viernes a domingo con tarifa preferencial.' },
+  { id: 'promo2', name: 'Semana Completa', badge: 'LUNES A VIERNES', desc: 'Renta tu auto de lunes a viernes y llega puntual a cada reunión.' },
+  { id: 'promo3', name: 'Mensual', badge: 'MES COMPLETO', desc: 'Tenemos la mejor tarifa mensual de Reynosa. Consulta disponibilidad.' },
 ];
-
 const defaultFaqs = [
-  { id: 1, q: '¿Qué documentos necesito para rentar?', a: 'INE vigente, licencia de manejo vigente y un depósito de garantía. En algunos casos se puede solicitar comprobante de domicilio.' },
-  { id: 2, q: '¿El kilometraje es ilimitado?', a: 'Sí, la mayoría de nuestros autos incluyen kilometraje ilimitado dentro de la zona. Para viajes fuera del estado o a Estados Unidos, consulta condiciones especiales.' },
-  { id: 3, q: '¿Qué incluye el Full Cover?', a: 'El Full Cover es un seguro adicional que cubre daños al vehículo en cualquier eventualidad, incluyendo accidentes, robo parcial o total y daños a terceros.' },
-  { id: 4, q: '¿Entregan el auto a domicilio?', a: 'Sí, contamos con entrega y recolección en Reynosa. Para mayor información sobre costos y zonas, contáctanos por WhatsApp.' },
-  { id: 5, q: '¿Se pueden cruzar a McAllen, Texas?', a: 'En algunos casos sí. Consulta directamente con tu asesor ya que aplican condiciones especiales para cruce internacional.' },
+  { id: 'faq1', q: '¿Qué documentos necesito para rentar?', a: 'INE vigente, licencia de manejo vigente y un depósito de garantía.' },
+  { id: 'faq2', q: '¿El kilometraje es ilimitado?', a: 'Sí, la mayoría de nuestros autos incluyen kilometraje ilimitado dentro de la zona.' },
+  { id: 'faq3', q: '¿Qué incluye el Full Cover?', a: 'Cubre daños al vehículo en cualquier eventualidad, incluyendo accidentes y robo.' },
+  { id: 'faq4', q: '¿Entregan el auto a domicilio?', a: 'Sí, contamos con entrega y recolección en Reynosa.' },
+  { id: 'faq5', q: '¿Se pueden cruzar a McAllen, Texas?', a: 'En algunos casos sí. Consulta directamente con tu asesor.' },
 ];
-
 const defaultReviews = [
-  { id: 1, name: 'Carlos Mendoza', stars: 5, text: 'Excelente servicio, el asesor me ayudó a elegir el auto perfecto para mi viaje a Monterrey. Lo recomiendo totalmente.', date: 'Abril 2025' },
-  { id: 2, name: 'Laura Sánchez', stars: 5, text: 'Muy rápido y sencillo. En menos de 30 minutos ya tenía mi auto listo. El trato es muy personalizado.', date: 'Marzo 2025' },
-  { id: 3, name: 'Familia Rodríguez', stars: 5, text: 'Rentamos para el fin de semana familiar y fue perfecto. Auto limpio, en buen estado y buen precio.', date: 'Febrero 2025' },
+  { id: 'rev1', name: 'Carlos Mendoza', stars: 5, text: 'Excelente servicio, el asesor me ayudó a elegir el auto perfecto.', date: 'Abril 2025' },
+  { id: 'rev2', name: 'Laura Sánchez', stars: 5, text: 'Muy rápido y sencillo. El trato es muy personalizado.', date: 'Marzo 2025' },
+  { id: 'rev3', name: 'Familia Rodríguez', stars: 5, text: 'Auto limpio, en buen estado y buen precio.', date: 'Febrero 2025' },
 ];
+const defaultSettings = { wa: '', logo: '', fcPrice: 150, fcDesc: 'Seguro completo — cobertura total ante cualquier eventualidad' };
 
 // ── STATE ──
-let cars = JSON.parse(localStorage.getItem('acr_cars') || 'null') || defaultCars;
-let promos = JSON.parse(localStorage.getItem('acr_promos') || 'null') || defaultPromos;
-let faqs = JSON.parse(localStorage.getItem('acr_faqs') || 'null') || defaultFaqs;
-let reviews = JSON.parse(localStorage.getItem('acr_reviews') || 'null') || defaultReviews;
-let settings = JSON.parse(localStorage.getItem('acr_settings') || 'null') || { wa: '', logo: '', fcPrice: 150, fcDesc: 'Seguro completo — cobertura total ante cualquier eventualidad' };
-
-let nextCarId = Math.max(0, ...cars.map(c => c.id)) + 1;
-let nextPromoId = Math.max(0, ...promos.map(p => p.id)) + 1;
-let nextFaqId = Math.max(0, ...faqs.map(f => f.id)) + 1;
-let nextRevId = Math.max(0, ...reviews.map(r => r.id)) + 1;
-
+let cars = [];
+let promos = [];
+let faqs = [];
+let reviews = [];
+let settings = { ...defaultSettings };
 let fcOn = false;
-let adminLoggedIn = false;
 let editingCarId = null;
+let editingFaqId = null;
 
-function saveAll() {
-  localStorage.setItem('acr_cars', JSON.stringify(cars));
-  localStorage.setItem('acr_promos', JSON.stringify(promos));
-  localStorage.setItem('acr_faqs', JSON.stringify(faqs));
-  localStorage.setItem('acr_reviews', JSON.stringify(reviews));
-  localStorage.setItem('acr_settings', JSON.stringify(settings));
+// ── SEED FIRESTORE (primera vez) ──
+async function seedIfEmpty() {
+  const snap = await getDoc(doc(db, 'settings', 'main'));
+  if (!snap.exists()) {
+    await setDoc(doc(db, 'settings', 'main'), defaultSettings);
+    for (const c of defaultCars) await setDoc(doc(db, 'cars', c.id), c);
+    for (const p of defaultPromos) await setDoc(doc(db, 'promos', p.id), p);
+    for (const f of defaultFaqs) await setDoc(doc(db, 'faqs', f.id), f);
+    for (const r of defaultReviews) await setDoc(doc(db, 'reviews', r.id), r);
+  }
+}
+
+// ── REALTIME LISTENERS ──
+function startListeners() {
+  onSnapshot(collection(db, 'cars'), snap => {
+    cars = snap.docs.map(d => ({ id: d.id, ...d.data() }));
+    cars.sort((a, b) => (a.id > b.id ? 1 : -1));
+    renderFleet();
+    renderAdminCars();
+  });
+  onSnapshot(collection(db, 'promos'), snap => {
+    promos = snap.docs.map(d => ({ id: d.id, ...d.data() }));
+    promos.sort((a, b) => (a.id > b.id ? 1 : -1));
+    renderPromos();
+    renderAdminPromos();
+  });
+  onSnapshot(collection(db, 'faqs'), snap => {
+    faqs = snap.docs.map(d => ({ id: d.id, ...d.data() }));
+    faqs.sort((a, b) => (a.id > b.id ? 1 : -1));
+    renderFaq();
+    renderAdminFaqs();
+  });
+  onSnapshot(collection(db, 'reviews'), snap => {
+    reviews = snap.docs.map(d => ({ id: d.id, ...d.data() }));
+    reviews.sort((a, b) => (a.id > b.id ? 1 : -1));
+    renderReviews();
+    renderAdminReviews();
+  });
+  onSnapshot(doc(db, 'settings', 'main'), snap => {
+    if (snap.exists()) {
+      settings = { ...defaultSettings, ...snap.data() };
+      applySettings();
+    }
+  });
 }
 
 // ── WA ──
@@ -1577,6 +1295,14 @@ function waLink(msg) {
 
 function updateNavWa() {
   document.getElementById('navWaBtn').href = waLink('¡Hola! Quiero información sobre renta de autos.');
+}
+
+function applySettings() {
+  updateNavWa();
+  if (settings.logo) applyLogo(settings.logo);
+  document.getElementById('fcPriceTag').textContent = `+$${settings.fcPrice}/día`;
+  document.getElementById('fcDesc').textContent = settings.fcDesc;
+  calculate();
 }
 
 // ── FLEET ──
@@ -1620,79 +1346,60 @@ function renderFleet() {
       </div>
     </div>`).join('');
 
-  // Update stat
-  const avail = cars.filter(c => c.available).length;
-  document.getElementById('statCars').textContent = avail;
+  document.getElementById('statCars').textContent = cars.filter(c => c.available).length;
 
-  // Update calculator select
   const sel = document.getElementById('calcCar');
   const current = sel.value;
   sel.innerHTML = '<option value="">— Selecciona un auto —</option>' +
     cars.filter(c => c.available).map(c => `<option value="${c.id}">${c.name} ${c.year} — $${c.price}/día</option>`).join('');
   if (current) sel.value = current;
+  calculate();
 }
 
 // ── PROMOS ──
 function renderPromos() {
   const grid = document.getElementById('promosGrid');
-  if (!promos.length) {
-    grid.innerHTML = '<p style="color:var(--muted);">Sin promociones activas.</p>';
-    return;
-  }
-  grid.innerHTML = promos.map(p => `
-    <div class="promo-card">
-      <span class="promo-badge">${p.badge}</span>
-      <div class="promo-name">${p.name}</div>
-      <div class="promo-desc">${p.desc}</div>
-    </div>`).join('');
+  grid.innerHTML = promos.length
+    ? promos.map(p => `<div class="promo-card"><span class="promo-badge">${p.badge}</span><div class="promo-name">${p.name}</div><div class="promo-desc">${p.desc}</div></div>`).join('')
+    : '<p style="color:var(--muted);">Sin promociones activas.</p>';
 }
 
 // ── FAQ ──
 function renderFaq() {
   const list = document.getElementById('faqList');
-  if (!faqs.length) {
-    list.innerHTML = '<p style="color:var(--muted);">Sin preguntas frecuentes.</p>';
-    return;
-  }
-  list.innerHTML = faqs.map(f => `
-    <div class="faq-item" id="faq-${f.id}">
-      <div class="faq-question" onclick="toggleFaq(${f.id})">
-        <span>${f.q}</span>
-        <span class="faq-icon">+</span>
-      </div>
-      <div class="faq-answer"><div class="faq-answer-inner">${f.a}</div></div>
-    </div>`).join('');
-}
-
-function toggleFaq(id) {
-  document.getElementById('faq-' + id).classList.toggle('open');
+  list.innerHTML = faqs.length
+    ? faqs.map(f => `
+        <div class="faq-item" id="faq-${f.id}">
+          <div class="faq-question" onclick="document.getElementById('faq-${f.id}').classList.toggle('open')">
+            <span>${f.q}</span><span class="faq-icon">+</span>
+          </div>
+          <div class="faq-answer"><div class="faq-answer-inner">${f.a}</div></div>
+        </div>`).join('')
+    : '<p style="color:var(--muted);">Sin preguntas frecuentes.</p>';
 }
 
 // ── REVIEWS ──
 function renderReviews() {
   const grid = document.getElementById('reviewsGrid');
-  if (!reviews.length) {
-    grid.innerHTML = '<p style="color:var(--muted);">Sin reseñas aún.</p>';
-    return;
-  }
-  grid.innerHTML = reviews.map(r => `
-    <div class="review-card">
-      <div class="review-stars">${'★'.repeat(r.stars)}${'☆'.repeat(5 - r.stars)}</div>
-      <div class="review-text">"${r.text}"</div>
-      <div class="review-author">${r.name}</div>
-      <div class="review-date">${r.date}</div>
-    </div>`).join('');
+  grid.innerHTML = reviews.length
+    ? reviews.map(r => `
+        <div class="review-card">
+          <div class="review-stars">${'★'.repeat(r.stars)}${'☆'.repeat(5 - r.stars)}</div>
+          <div class="review-text">"${r.text}"</div>
+          <div class="review-author">${r.name}</div>
+          <div class="review-date">${r.date}</div>
+        </div>`).join('')
+    : '<p style="color:var(--muted);">Sin reseñas aún.</p>';
 }
 
 // ── CALCULATOR ──
 function calculate() {
-  const carId = parseInt(document.getElementById('calcCar').value);
+  const carId = document.getElementById('calcCar').value;
   const days = parseInt(document.getElementById('calcDays').value) || 1;
   const startVal = document.getElementById('calcStart').value;
   const rowsEl = document.getElementById('calcRows');
   const waBtn = document.getElementById('calcWaBtn');
 
-  // Update end date
   if (startVal && days) {
     const start = new Date(startVal);
     start.setDate(start.getDate() + days);
@@ -1704,7 +1411,6 @@ function calculate() {
     waBtn.href = '#';
     return;
   }
-
   const car = cars.find(c => c.id === carId);
   if (!car) return;
 
@@ -1717,74 +1423,64 @@ function calculate() {
     ${fcOn ? `<div class="calc-result-row"><span>Full Cover × ${days} día${days > 1 ? 's' : ''}</span><span class="amount">$${fcTotal.toLocaleString()} MXN</span></div>` : ''}
     <div class="calc-result-row total"><span>TOTAL ESTIMADO</span><span class="amount">$${total.toLocaleString()} MXN</span></div>`;
 
-  const startStr = startVal || 'fecha por confirmar';
-  const msg = `¡Hola! Quiero rentar:\n🚗 ${car.name} ${car.year}\n📅 ${days} día(s) desde ${startStr}\n${fcOn ? '🛡 Con Full Cover\n' : ''}💰 Total estimado: $${total.toLocaleString()} MXN\n\n¿Está disponible?`;
+  const msg = `¡Hola! Quiero rentar:\n🚗 ${car.name} ${car.year}\n📅 ${days} día(s) desde ${startVal || 'fecha por confirmar'}\n${fcOn ? '🛡 Con Full Cover\n' : ''}💰 Total estimado: $${total.toLocaleString()} MXN\n\n¿Está disponible?`;
   waBtn.href = waLink(msg);
 }
 
 function toggleFullCover() {
   fcOn = !fcOn;
   document.getElementById('fcToggle').classList.toggle('on', fcOn);
-  document.getElementById('fcPriceTag').textContent = `+$${settings.fcPrice}/día`;
-  document.getElementById('fcDesc').textContent = settings.fcDesc;
   calculate();
 }
 
-// ── ADMIN ──
-function openAdmin() {
-  document.getElementById('adminModal').classList.add('open');
-  if (adminLoggedIn) showAdminPanel();
-}
-
-function closeAdmin() {
-  document.getElementById('adminModal').classList.remove('open');
-}
-
-function checkLogin() {
-  if (document.getElementById('adminPwd').value === ADMIN_PASS) {
-    adminLoggedIn = true;
-    showAdminPanel();
+// ── AUTH ──
+onAuthStateChanged(auth, user => {
+  if (user) {
+    document.getElementById('loginBox').style.display = 'none';
+    document.getElementById('adminPanel').style.display = 'block';
+    fillSettingsForm();
   } else {
+    document.getElementById('loginBox').style.display = 'block';
+    document.getElementById('adminPanel').style.display = 'none';
+  }
+});
+
+// ── ADMIN ──
+window.openAdmin = function() {
+  document.getElementById('adminModal').classList.add('open');
+};
+window.closeAdmin = function() {
+  document.getElementById('adminModal').classList.remove('open');
+};
+
+window.checkLogin = async function() {
+  const pwd = document.getElementById('adminPwd').value;
+  const btn = document.getElementById('loginBtn');
+  btn.textContent = 'ENTRANDO...';
+  btn.disabled = true;
+  try {
+    await signInWithEmailAndPassword(auth, 'isaib1973@gmail.com', pwd);
+    document.getElementById('loginErr').style.display = 'none';
+  } catch(e) {
     document.getElementById('loginErr').style.display = 'block';
   }
-}
+  btn.textContent = 'ENTRAR';
+  btn.disabled = false;
+};
 
-function showAdminPanel() {
-  document.getElementById('loginBox').style.display = 'none';
-  document.getElementById('adminPanel').style.display = 'block';
-  renderAdminCars();
-  renderAdminPromos();
-  renderAdminFaqs();
-  renderAdminReviews();
-  // Fill settings
-  document.getElementById('set-wa').value = settings.wa || '';
-  document.getElementById('set-fc').value = settings.fcPrice || 150;
-  document.getElementById('set-fc-desc').value = settings.fcDesc || '';
-  if (settings.logo) {
-    document.getElementById('set-logo').value = settings.logo;
-    const prev = document.getElementById('set-logo-preview');
-    prev.src = settings.logo; prev.style.display = 'block';
-  }
-}
+window.logout = async function() {
+  await signOut(auth);
+  window.closeAdmin();
+};
 
-function logout() {
-  adminLoggedIn = false;
-  document.getElementById('adminPanel').style.display = 'none';
-  document.getElementById('loginBox').style.display = 'block';
-  document.getElementById('adminPwd').value = '';
-  closeAdmin();
-}
-
-function switchTab(name) {
-  document.querySelectorAll('.admin-tab').forEach((t, i) => {
-    const tabs = ['cars','promos','faq','reviews','settings'];
-    t.classList.toggle('active', tabs[i] === name);
-  });
+window.switchTab = function(name) {
+  const tabs = ['cars','promos','faq','reviews','settings'];
+  document.querySelectorAll('.admin-tab').forEach((t, i) => t.classList.toggle('active', tabs[i] === name));
   document.querySelectorAll('.admin-tab-content').forEach(c => c.classList.remove('active'));
   document.getElementById('tab-' + name).classList.add('active');
-}
+};
 
-// ADMIN CARS
+// ── ADMIN CARS ──
 function renderAdminCars() {
   document.getElementById('adminCarList').innerHTML = cars.map(c => `
     <div class="admin-item-row">
@@ -1794,20 +1490,20 @@ function renderAdminCars() {
         <div class="admin-item-meta">$${c.price}/día · ${c.cat} · ${c.trans}</div>
       </div>
       <div class="admin-item-actions">
-        <button class="btn-toggle-status ${c.available ? 'available' : 'rented'}" onclick="toggleCarStatus(${c.id})">${c.available ? '✓ DISPONIBLE' : '✗ RENTADO'}</button>
-        <button class="btn-edit" onclick="openEditCar(${c.id})">EDITAR</button>
-        <button class="btn-del" onclick="deleteCar(${c.id})">✕</button>
+        <button class="btn-toggle-status ${c.available ? 'available' : 'rented'}" onclick="window.toggleCarStatus('${c.id}')">${c.available ? '✓ DISPONIBLE' : '✗ RENTADO'}</button>
+        <button class="btn-edit" onclick="window.openEditCar('${c.id}')">EDITAR</button>
+        <button class="btn-del" onclick="window.deleteCar('${c.id}')">✕</button>
       </div>
     </div>`).join('') || '<p style="color:var(--muted);font-size:0.85rem;">Sin autos.</p>';
 }
 
-function addCar() {
+window.addCar = async function() {
   const name = document.getElementById('nc-name').value.trim();
   const price = parseFloat(document.getElementById('nc-price').value);
   if (!name || isNaN(price)) { alert('Nombre y precio son obligatorios.'); return; }
-  cars.push({
-    id: nextCarId++,
-    name,
+  const id = 'car_' + Date.now();
+  await setDoc(doc(db, 'cars', id), {
+    id, name,
     year: parseInt(document.getElementById('nc-year').value) || new Date().getFullYear(),
     cat: document.getElementById('nc-cat').value,
     price,
@@ -1817,23 +1513,24 @@ function addCar() {
     img: document.getElementById('nc-img').value.trim(),
     available: true,
   });
-  saveAll(); renderFleet(); renderAdminCars(); showToast('AUTO AGREGADO');
+  showToast('AUTO AGREGADO');
   ['nc-name','nc-year','nc-price','nc-pass','nc-notes','nc-img'].forEach(id => document.getElementById(id).value = '');
   document.getElementById('nc-preview').style.display = 'none';
-}
+};
 
-function toggleCarStatus(id) {
+window.toggleCarStatus = async function(id) {
   const c = cars.find(x => x.id === id);
-  if (c) { c.available = !c.available; saveAll(); renderFleet(); renderAdminCars(); }
-}
+  if (c) {
+    await setDoc(doc(db, 'cars', id), { ...c, available: !c.available });
+  }
+};
 
-function deleteCar(id) {
+window.deleteCar = async function(id) {
   if (!confirm('¿Eliminar este auto?')) return;
-  cars = cars.filter(c => c.id !== id);
-  saveAll(); renderFleet(); renderAdminCars();
-}
+  await deleteDoc(doc(db, 'cars', id));
+};
 
-function openEditCar(id) {
+window.openEditCar = function(id) {
   const c = cars.find(x => x.id === id);
   if (!c) return;
   editingCarId = id;
@@ -1848,55 +1545,47 @@ function openEditCar(id) {
   const prev = document.getElementById('ec-preview');
   if (c.img) { prev.src = c.img; prev.style.display = 'block'; } else { prev.style.display = 'none'; }
   document.getElementById('editCarModal').classList.add('open');
-}
-
-function closeEditCar() {
-  document.getElementById('editCarModal').classList.remove('open');
-  editingCarId = null;
-}
-
-function saveEditCar() {
+};
+window.closeEditCar = function() { document.getElementById('editCarModal').classList.remove('open'); editingCarId = null; };
+window.saveEditCar = async function() {
+  if (!editingCarId) return;
   const c = cars.find(x => x.id === editingCarId);
-  if (!c) return;
-  c.name = document.getElementById('ec-name').value.trim();
-  c.year = parseInt(document.getElementById('ec-year').value);
-  c.cat = document.getElementById('ec-cat').value;
-  c.price = parseFloat(document.getElementById('ec-price').value);
-  c.trans = document.getElementById('ec-trans').value;
-  c.pass = parseInt(document.getElementById('ec-pass').value);
-  c.notes = document.getElementById('ec-notes').value.trim();
-  c.img = document.getElementById('ec-img').value.trim();
-  saveAll(); renderFleet(); renderAdminCars(); closeEditCar(); showToast('CAMBIOS GUARDADOS');
-}
+  const updated = {
+    ...c,
+    name: document.getElementById('ec-name').value.trim(),
+    year: parseInt(document.getElementById('ec-year').value),
+    cat: document.getElementById('ec-cat').value,
+    price: parseFloat(document.getElementById('ec-price').value),
+    trans: document.getElementById('ec-trans').value,
+    pass: parseInt(document.getElementById('ec-pass').value),
+    notes: document.getElementById('ec-notes').value.trim(),
+    img: document.getElementById('ec-img').value.trim(),
+  };
+  await setDoc(doc(db, 'cars', editingCarId), updated);
+  window.closeEditCar();
+  showToast('CAMBIOS GUARDADOS');
+};
 
-// ADMIN PROMOS
+// ── ADMIN PROMOS ──
 function renderAdminPromos() {
   document.getElementById('adminPromoList').innerHTML = promos.map(p => `
     <div class="admin-item-row">
-      <div class="admin-item-info">
-        <div class="admin-item-name">${p.name}</div>
-        <div class="admin-item-meta">${p.badge}</div>
-      </div>
-      <div class="admin-item-actions">
-        <button class="btn-del" onclick="deletePromo(${p.id})">✕</button>
-      </div>
+      <div class="admin-item-info"><div class="admin-item-name">${p.name}</div><div class="admin-item-meta">${p.badge}</div></div>
+      <div class="admin-item-actions"><button class="btn-del" onclick="window.deletePromo('${p.id}')">✕</button></div>
     </div>`).join('') || '<p style="color:var(--muted);font-size:0.85rem;">Sin promos.</p>';
 }
 
-function addPromo() {
+window.addPromo = async function() {
   const name = document.getElementById('np-name').value.trim();
   if (!name) return;
-  promos.push({ id: nextPromoId++, name, badge: document.getElementById('np-badge').value.trim() || 'PROMO', desc: document.getElementById('np-desc').value.trim() });
-  saveAll(); renderPromos(); renderAdminPromos(); showToast('PROMO AGREGADA');
+  const id = 'promo_' + Date.now();
+  await setDoc(doc(db, 'promos', id), { id, name, badge: document.getElementById('np-badge').value.trim() || 'PROMO', desc: document.getElementById('np-desc').value.trim() });
+  showToast('PROMO AGREGADA');
   ['np-name','np-badge','np-desc'].forEach(id => document.getElementById(id).value = '');
-}
+};
+window.deletePromo = async function(id) { await deleteDoc(doc(db, 'promos', id)); };
 
-function deletePromo(id) {
-  promos = promos.filter(p => p.id !== id);
-  saveAll(); renderPromos(); renderAdminPromos();
-}
-
-// ADMIN FAQ
+// ── ADMIN FAQ ──
 function renderAdminFaqs() {
   document.getElementById('adminFaqList').innerHTML = faqs.map(f => `
     <div class="admin-item-row" style="flex-wrap:wrap;">
@@ -1905,85 +1594,92 @@ function renderAdminFaqs() {
         <div class="admin-item-meta" style="margin-top:4px;font-size:0.75rem;color:#555;">${f.a.substring(0,80)}...</div>
       </div>
       <div class="admin-item-actions">
-        <button class="btn-edit" onclick="openEditFaq(${f.id})">EDITAR</button>
-        <button class="btn-del" onclick="deleteFaq(${f.id})">✕</button>
+        <button class="btn-edit" onclick="window.openEditFaq('${f.id}')">EDITAR</button>
+        <button class="btn-del" onclick="window.deleteFaq('${f.id}')">✕</button>
       </div>
     </div>`).join('') || '<p style="color:var(--muted);font-size:0.85rem;">Sin preguntas.</p>';
 }
 
-let editingFaqId = null;
-
-function openEditFaq(id) {
+window.addFaq = async function() {
+  const q = document.getElementById('nf-q').value.trim();
+  const a = document.getElementById('nf-a').value.trim();
+  if (!q || !a) return;
+  const id = 'faq_' + Date.now();
+  await setDoc(doc(db, 'faqs', id), { id, q, a });
+  showToast('PREGUNTA AGREGADA');
+  ['nf-q','nf-a'].forEach(id => document.getElementById(id).value = '');
+};
+window.deleteFaq = async function(id) { await deleteDoc(doc(db, 'faqs', id)); };
+window.openEditFaq = function(id) {
   const f = faqs.find(x => x.id === id);
   if (!f) return;
   editingFaqId = id;
   document.getElementById('ef-q').value = f.q;
   document.getElementById('ef-a').value = f.a;
   document.getElementById('editFaqModal').classList.add('open');
-}
-
-function closeEditFaq() {
-  document.getElementById('editFaqModal').classList.remove('open');
-  editingFaqId = null;
-}
-
-function saveEditFaq() {
+};
+window.closeEditFaq = function() { document.getElementById('editFaqModal').classList.remove('open'); editingFaqId = null; };
+window.saveEditFaq = async function() {
+  if (!editingFaqId) return;
   const f = faqs.find(x => x.id === editingFaqId);
-  if (!f) return;
-  f.q = document.getElementById('ef-q').value.trim();
-  f.a = document.getElementById('ef-a').value.trim();
-  saveAll(); renderFaq(); renderAdminFaqs(); closeEditFaq(); showToast('PREGUNTA ACTUALIZADA');
-}
+  await setDoc(doc(db, 'faqs', editingFaqId), { ...f, q: document.getElementById('ef-q').value.trim(), a: document.getElementById('ef-a').value.trim() });
+  window.closeEditFaq();
+  showToast('PREGUNTA ACTUALIZADA');
+};
 
-function addFaq() {
-  const q = document.getElementById('nf-q').value.trim();
-  const a = document.getElementById('nf-a').value.trim();
-  if (!q || !a) return;
-  faqs.push({ id: nextFaqId++, q, a });
-  saveAll(); renderFaq(); renderAdminFaqs(); showToast('PREGUNTA AGREGADA');
-  ['nf-q','nf-a'].forEach(id => document.getElementById(id).value = '');
-}
-
-function deleteFaq(id) {
-  faqs = faqs.filter(f => f.id !== id);
-  saveAll(); renderFaq(); renderAdminFaqs();
-}
-
-// ADMIN REVIEWS
+// ── ADMIN REVIEWS ──
 function renderAdminReviews() {
   document.getElementById('adminReviewList').innerHTML = reviews.map(r => `
     <div class="admin-item-row">
-      <div class="admin-item-info">
-        <div class="admin-item-name">${r.name} — ${'★'.repeat(r.stars)}</div>
-        <div class="admin-item-meta">${r.text.substring(0, 60)}...</div>
-      </div>
-      <div class="admin-item-actions">
-        <button class="btn-del" onclick="deleteReview(${r.id})">✕</button>
-      </div>
+      <div class="admin-item-info"><div class="admin-item-name">${r.name} — ${'★'.repeat(r.stars)}</div><div class="admin-item-meta">${r.text.substring(0,60)}...</div></div>
+      <div class="admin-item-actions"><button class="btn-del" onclick="window.deleteReview('${r.id}')">✕</button></div>
     </div>`).join('') || '<p style="color:var(--muted);font-size:0.85rem;">Sin reseñas.</p>';
 }
 
-function addReview() {
+window.addReview = async function() {
   const name = document.getElementById('nr-name').value.trim();
   const text = document.getElementById('nr-text').value.trim();
   if (!name || !text) return;
-  reviews.push({ id: nextRevId++, name, stars: parseInt(document.getElementById('nr-stars').value), text, date: document.getElementById('nr-date').value.trim() || 'Reciente' });
-  saveAll(); renderReviews(); renderAdminReviews(); showToast('RESEÑA AGREGADA');
+  const id = 'rev_' + Date.now();
+  await setDoc(doc(db, 'reviews', id), { id, name, stars: parseInt(document.getElementById('nr-stars').value), text, date: document.getElementById('nr-date').value.trim() || 'Reciente' });
+  showToast('RESEÑA AGREGADA');
   ['nr-name','nr-text','nr-date'].forEach(id => document.getElementById(id).value = '');
+};
+window.deleteReview = async function(id) { await deleteDoc(doc(db, 'reviews', id)); };
+
+// ── SETTINGS ──
+function fillSettingsForm() {
+  document.getElementById('set-wa').value = settings.wa || '';
+  document.getElementById('set-fc').value = settings.fcPrice || 150;
+  document.getElementById('set-fc-desc').value = settings.fcDesc || '';
+  if (settings.logo) {
+    document.getElementById('set-logo').value = settings.logo;
+    const prev = document.getElementById('set-logo-preview');
+    prev.src = settings.logo; prev.style.display = 'block';
+  }
 }
 
-function deleteReview(id) {
-  reviews = reviews.filter(r => r.id !== id);
-  saveAll(); renderReviews(); renderAdminReviews();
-}
-
-// SETTINGS
-function saveLogo() {
+window.saveLogo = async function() {
   const url = document.getElementById('set-logo').value.trim();
   if (!url) return;
   settings.logo = url;
-  saveAll(); applyLogo(url); showToast('LOGO GUARDADO');
-}
+  await setDoc(doc(db, 'settings', 'main'), settings);
+  applyLogo(url);
+  showToast('LOGO GUARDADO');
+};
+
+window.saveWa = async function() {
+  settings.wa = document.getElementById('set-wa').value.trim();
+  await setDoc(doc(db, 'settings', 'main'), settings);
+  showToast('NÚMERO GUARDADO');
+};
+
+window.saveFc = async function() {
+  settings.fcPrice = parseFloat(document.getElementById('set-fc').value) || 150;
+  settings.fcDesc = document.getElementById('set-fc-desc').value.trim();
+  await setDoc(doc(db, 'settings', 'main'), settings);
+  showToast('FULL COVER GUARDADO');
+};
 
 function applyLogo(url) {
   const img = document.getElementById('navLogoImg');
@@ -1994,21 +1690,8 @@ function applyLogo(url) {
   img.onerror = () => { img.style.display = 'none'; svg.style.display = 'block'; };
 }
 
-function saveWa() {
-  settings.wa = document.getElementById('set-wa').value.trim();
-  saveAll(); updateNavWa(); showToast('NÚMERO GUARDADO');
-}
-
-function saveFc() {
-  settings.fcPrice = parseFloat(document.getElementById('set-fc').value) || 150;
-  settings.fcDesc = document.getElementById('set-fc-desc').value.trim();
-  saveAll(); document.getElementById('fcPriceTag').textContent = `+$${settings.fcPrice}/día`;
-  document.getElementById('fcDesc').textContent = settings.fcDesc;
-  showToast('FULL COVER GUARDADO');
-}
-
-// UTILS
-function fileToUrl(input, targetId, previewId) {
+// ── UTILS ──
+window.fileToUrl = function(input, targetId, previewId) {
   const file = input.files[0];
   if (!file) return;
   const reader = new FileReader();
@@ -2019,33 +1702,27 @@ function fileToUrl(input, targetId, previewId) {
     preview.style.display = 'block';
   };
   reader.readAsDataURL(file);
-}
+};
 
-function showToast(msg) {
+function showToast(msg, isError = false) {
   const t = document.getElementById('toast');
-  t.textContent = '✓ ' + msg;
+  t.textContent = (isError ? '✗ ' : '✓ ') + msg;
+  t.className = 'toast' + (isError ? ' error' : '');
   t.classList.add('show');
   setTimeout(() => t.classList.remove('show'), 2500);
 }
 
-// Close on overlay click
+window.calculate = calculate;
+window.toggleFullCover = toggleFullCover;
+
+// ── CLOSE ON OVERLAY CLICK ──
 document.getElementById('adminModal').addEventListener('click', e => {
-  if (e.target === document.getElementById('adminModal')) closeAdmin();
+  if (e.target === document.getElementById('adminModal')) window.closeAdmin();
 });
 
-// Set today as default start date
+// ── INIT ──
 document.getElementById('calcStart').valueAsDate = new Date();
-
-// Init
-renderFleet();
-renderPromos();
-renderFaq();
-renderReviews();
-updateNavWa();
-if (settings.logo) applyLogo(settings.logo);
-document.getElementById('fcPriceTag').textContent = `+$${settings.fcPrice}/día`;
-document.getElementById('fcDesc').textContent = settings.fcDesc;
-calculate();
+seedIfEmpty().then(() => startListeners());
 </script>
 </body>
 </html>
